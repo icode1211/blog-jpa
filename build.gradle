@@ -29,8 +29,6 @@ dependencies {
 //	use postgresql DBMS
 	implementation 'org.postgresql:postgresql'
 
-	testImplementation 'ch.qos.logback:logback-classic:1.5.3'
-
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'
