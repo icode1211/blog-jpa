@@ -2,7 +2,7 @@ package com.estsoft.blogjpa.controller;
 
 import com.estsoft.blogjpa.dto.AddArticleRequest;
 import com.estsoft.blogjpa.dto.ArticleResponse;
-import com.estsoft.blogjpa.model.Article;
+import com.estsoft.blogjpa.domain.Article;
 import com.estsoft.blogjpa.service.BlogService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

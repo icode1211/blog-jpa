@@ -2,7 +2,7 @@ package com.estsoft.blogjpa.service;
 
 import com.estsoft.blogjpa.dto.AddArticleRequest;
 import com.estsoft.blogjpa.external.ExampleAPIClient;
-import com.estsoft.blogjpa.model.Article;
+import com.estsoft.blogjpa.domain.Article;
 import com.estsoft.blogjpa.repository.BlogRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -42,7 +42,6 @@ public class BlogService {
         blogRepository.deleteById(id);
     }
 
-    @Transactional
     public Article update(Long id, AddArticleRequest request) {
         // begin transaction
         Article article = findById(id);

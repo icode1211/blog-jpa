@@ -1,6 +1,6 @@
 package com.estsoft.blogjpa.dto;
 
-import com.estsoft.blogjpa.model.Article;
+import com.estsoft.blogjpa.domain.Article;
 import lombok.*;
 
 @Getter

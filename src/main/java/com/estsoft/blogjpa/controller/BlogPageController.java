@@ -1,7 +1,7 @@
 package com.estsoft.blogjpa.controller;
 
 import com.estsoft.blogjpa.dto.ArticleViewResponse;
-import com.estsoft.blogjpa.model.Article;
+import com.estsoft.blogjpa.domain.Article;
 import com.estsoft.blogjpa.service.BlogService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
