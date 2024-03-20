@@ -13,8 +13,8 @@ public class UserService {
     private final UserRepository userRepository;
     private final BCryptPasswordEncoder encoder;
 
-    public void save(AddUserRequest request) {
-        userRepository.save(new User(
+    public User save(AddUserRequest request) {
+        return userRepository.save(new User(
                 request.getEmail(), encoder.encode(request.getPassword())));
     }
 }
