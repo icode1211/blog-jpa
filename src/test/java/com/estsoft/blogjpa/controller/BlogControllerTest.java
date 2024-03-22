@@ -105,6 +105,9 @@ class BlogControllerTest {
         assertFalse(deletedArticle.isPresent());
     }
 
-    // 코드 변경사항 가정 (테스트 코드 삭제)
+    @Test
+    public void updateTest() {
+        // 업데이트 테스트 코드 추가!
+    }
 
 }
