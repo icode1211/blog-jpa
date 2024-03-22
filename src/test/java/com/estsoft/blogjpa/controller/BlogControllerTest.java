@@ -3,9 +3,12 @@ package com.estsoft.blogjpa.controller;
 import com.estsoft.blogjpa.domain.Article;
 import com.estsoft.blogjpa.dto.AddArticleRequest;
 import com.estsoft.blogjpa.repository.BlogRepository;
+import com.estsoft.blogjpa.repository.UserRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,6 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -100,4 +104,7 @@ class BlogControllerTest {
         Optional<Article> deletedArticle = blogRepository.findById(id);
         assertFalse(deletedArticle.isPresent());
     }
+
+    // 코드 변경사항 가정 (테스트 코드 삭제)
+
 }
