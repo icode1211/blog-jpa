@@ -100,4 +100,9 @@ class BlogControllerTest {
         Optional<Article> deletedArticle = blogRepository.findById(id);
         assertFalse(deletedArticle.isPresent());
     }
+
+    @Test
+    public void updateTest() {
+        // 업데이트 테스트 코드 추가!
+    }
 }
